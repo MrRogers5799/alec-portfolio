@@ -5,12 +5,8 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/alec-portfolio',
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true
-  },
   plugins: [react(), tailwindcss()],
+  base: '/alec-portfolio',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
