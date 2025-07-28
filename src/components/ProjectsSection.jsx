@@ -4,11 +4,11 @@ const projects = [
     {
         id: 1,
         title: "Portfolio Website",
-        description: "Learned React and Tailwind CSS to create a portfolio website.",
-        image: "/projects/portfolio.png",
+        description: "Learned React and Tailwind CSS to create this portfolio website.",
+        image: "/alec-portfolio/projects/portfolio.png",
         tags: ["React", "Tailwind CSS", "JavaScript"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/MrRogers5799/alec-portfolio",
     },
 ];
 
@@ -34,8 +34,8 @@ export const ProjectsSection = () => {
 
                         <div className="p-6">
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {project.tags.map((tag) => (
-                                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"> {tag} </span>
+                                {project.tags.map((tag, key) => (
+                                    <span key={key} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"> {tag} </span>
                                 ))}
                             </div>
 
@@ -67,10 +67,10 @@ export const ProjectsSection = () => {
             </div>
 
             <div className="text-center mt-12">
-                <a 
-                className="cosmic-button w-fit flex item-center mx-auto gap-2"
-                href="https://github.com/"
-                target="_blank"
+                <a
+                    className="cosmic-button w-fit flex item-center mx-auto gap-2"
+                    href="https://github.com/MrRogers5799"
+                    target="_blank"
                 >
                     Check My Github <ArrowRight size={20} />
                 </a>
